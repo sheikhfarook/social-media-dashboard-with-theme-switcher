@@ -2,12 +2,13 @@ import { dashboardData } from "../../data/data";
 
 const DashBoardComponent = () => {
   return (
-    <div className="flex gap-10 mt-10 w-[1110px] h-[216px]">
+    <div className="flex gap-10 mt-10 h-[216px] max-sm:flex-col  max-sm:mt-10">
       {dashboardData?.map((info) => (
         <div
           key={info?.id}
           className={`border-t-[4px] text-center w-[255px] h-[216px] 
-          rounded-[5px] bg-[#252b42] space-y-5 p-8 cursor-pointer hover:opacity-85 ${
+          rounded-[5px] bg-[#252b42] space-y-5 p-8 cursor-pointer hover:opacity-85
+          max-sm:w-[326px] ${
             info.name === "facebook"
               ? "border-t-[#178FF5] "
               : info.name === "twitter"
