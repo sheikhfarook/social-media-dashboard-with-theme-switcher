@@ -2,7 +2,7 @@ const DarkMode = () => {
   return (
     <div
       className="flex justify-between text-[#FFF] max-sm:flex-col max-sm:space-y-4
-     max-sm:w-[326px] max-sm:m-auto">
+     ">
       <div className="leading-">
         <div className="text-[2rem] text-[#FFF] font-[700] max-sm:text-[24px]">
           Social Media Dashboard
