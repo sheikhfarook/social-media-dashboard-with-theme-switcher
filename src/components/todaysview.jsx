@@ -2,16 +2,16 @@ import { overView } from "./data/overview";
 
 const TodaysView = () => {
   return (
-    <div className="mt-14 ">
+    <div className="mt-14 max-sm:mt-[52rem]">
       <div className="text-[#FFF] text-[24px] font-[700] leading-[29.05px]">
         Overview - Today
       </div>
-      <div className="grid grid-cols-4 mt-10 gap-5  w-[1110px]">
+      <div className="grid grid-cols-4 mt-10 gap-5   max-sm:grid-cols-1">
         {overView?.map((views) => (
           <div
             key={views?.id}
             className=" w-[255px] h-[125px] text-[#FFF] bg-[#252b42] space-y-7 p-6 rounded-[5px] 
-            cursor-pointer hover:opacity-85 ">
+            cursor-pointer hover:opacity-85 max-sm:w-[326px]">
             <div className="flex gap-5 justify-between ">
               <div className="text-[14px] text-[#8c98c6] font-[700] leading-[16.94px]">
                 {views?.text}
